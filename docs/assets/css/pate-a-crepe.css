@@ -1,0 +1,28 @@
+div{
+    background-color:rgb(233, 227, 220);
+    margin-top : 20px;
+    margin-bottom : 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding : 1px;
+    padding-left:10px;
+    padding-right: 10px;
+
+}
+
+div>ul{
+    margin-left:10px;
+}
+
+.lireaussi{
+    color:rgb(133, 79, 17)
+}
+
+html{
+    font-family:sans-serif
+}
+
+h2{
+    font-size: 30px;
+    font-weight: normal;
+}
