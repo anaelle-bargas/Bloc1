@@ -1,9 +1,9 @@
-div{
+.ecrits{
     background-color:rgb(233, 227, 220);
     margin-top : 20px;
     margin-bottom : 20px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
     padding : 1px;
     padding-left:10px;
     padding-right: 10px;
@@ -14,8 +14,20 @@ div>ul{
     margin-left:10px;
 }
 
-.lireaussi{
-    color:rgb(133, 79, 17)
+.plireaussi{
+    margin-left: 55px;
+    background-color:rgb(233, 227, 220);
+    margin-right:55px;
+    border-top: 1px rgb(0, 0, 0) outset;
+    border-bottom: 1px rgb(0, 0, 0) outset;
+    border-spacing: 2px;
+
+}
+
+div .lireaussi{
+    color:rgb(133, 79, 17);
+    margin-top : 0px;
+    margin-bottom : 0px;
 }
 
 html{
@@ -25,4 +37,15 @@ html{
 h2{
     font-size: 30px;
     font-weight: normal;
+    padding-top: 0px;
+}
+
+.liste{
+    background-color:rgb(233, 227, 220);
+    margin-left:65px;
+    margin-right:50px;
+    padding-left: -1px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+
 }
