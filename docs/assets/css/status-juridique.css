@@ -1,0 +1,10 @@
+body {
+    font-size:15px;
+}
+
+:col {
+    background-color: beige;
+}
+:row {
+    background-color: blanchedalmond;
+}
