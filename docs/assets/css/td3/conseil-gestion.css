@@ -1,6 +1,6 @@
 body {
     background-color: rgb(233, 223, 223);
-
+    font-family: 'Inter', sans-serif;
 }
 
 #tout{
@@ -26,11 +26,26 @@ body {
     flex-wrap: wrap;
 }
 
-.conseilgestion{
+#conseilgestion{
     border-radius: 35px;
     background-color: rgb(204, 82, 0);
     text-align : center;
     padding : 15px;
     color:white;
+    justify-content: center;
 
+}
+
+.tiredefreepik{
+    
+    color:rgba(255, 255, 255, 0.493);
+    
+}
+
+#conseilgestion>p{
+    font-size:15px;
+    
+}
+.flex>#conseilgestion{
+    justify-content: center;
 }
