@@ -1,0 +1,139 @@
+body {
+    background-color: rgb(233, 223, 223);
+    font-family: 'Inter', sans-serif;
+}
+#tout {
+    
+    width:auto;
+    background-image: url("./../../images/df-min.jpg");
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    height: 1000px;
+
+
+}
+
+
+
+
+
+#fond{
+    width : 100%
+}
+#image{
+    display:flex;
+    justify-content: center;
+}
+
+
+
+
+.tiredefreepik{    
+    color:rgba(255, 255, 255, 0.493);
+}
+#conseilgestion{
+    border-radius: 35px;
+    background-color: rgb(204, 82, 0);
+    width:100%;
+    text-align : center;
+    padding : 15px;
+    color:white;
+    height:140px;
+    
+}
+#blocconseilgestion{
+    display:grid;
+    justify-content: center;
+    height:10px;
+    
+
+}
+
+
+
+
+
+
+
+#gestion{
+    background-color: white;
+    border-radius: 35px;
+    padding:15px;
+    width:10%;
+    height: 180px;
+    position: right;
+}
+
+#approvisionnement{
+    background-color: white;
+    border-radius: 35px;
+    width:10%;
+    height: 180px;
+    padding:15px;
+}
+
+#consultation{
+    background-color: white;
+    border-radius: 35px;
+    width:10%;
+    height: 180px;
+    padding:15px;
+}
+
+#strategie{
+    background-color: white;
+    border-radius: 35px;
+    padding:15px;
+    width:10%;
+    height: 180px;
+}
+
+
+
+footer{
+    background-color: rgb(41, 43, 45);
+    color: white;
+    font-size : 10px;
+    height: 50px;
+    bottom:0;
+    text-align: center;
+    padding-top:35px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+#petit{
+    font-size:15px;
+}
+
+/* Pour le conteneur parent */
+
+#bas{
+    
+    width:100%;
+    height: 1000px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+#blocsbas {
+    display:flex;/* Permet aux éléments de passer à la ligne lorsque l'espace est insuffisant */
+    bottom:0;
+    width:80%;
+}
+
+
+/* Pour les éléments enfants (les divs à l'intérieur de blocsbas) */
+#strategie,
+#gestion,
+#approvisionnement,
+#consultation {
+    flex: 1; /* Permet aux éléments d'occuper un espace égal */
+    height: 300px;
+    margin:50px
+
+   /* Marge entre les éléments */
+}
