@@ -1,0 +1,169 @@
+html {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  height: fit-content;
+  height:1000px;
+  background-color:rgb(233, 231, 232);
+  font-family: 'Roboto', sans-serif;
+}
+
+
+#main{
+  width:100%;
+  height:1000px;
+  display:flex;
+  justify-content: space-between;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+  background-image: url("./../images/df-min.jpg");
+  margin-top:5%;
+  background-size:65%;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+
+
+
+
+
+
+#conseil_gestion{
+  color: white;
+  padding:15px;
+  margin-top:-4%;
+  border-radius: 35px;
+  background-color: rgb(209, 94, 65);
+  width:28%;
+  height:28%;
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+#aide{
+
+  font-weight:bolder;
+}
+
+#conseil_gestion>h1{
+  width:90%;
+  height:51%;
+  font-size:45px;
+  font-weight:bolder;
+
+}
+
+#tiree_de{
+  color: rgba(255, 255, 255, 0.438);
+ 
+}
+
+
+#blocs_produits{
+  margin-bottom:2.5%;
+  /* background-color: aquamarine; */
+  height:35%;
+  width:75%;
+  display:flex;
+  justify-content: space-between;
+  
+}
+
+
+#strategie, #gestion, #approvisionnement,#consultation {
+  padding-left:2%;
+  padding-top: 2%;
+  padding-right: 30px;
+  width:20%;
+  height:100%;
+  background-color: white;
+  border-radius: 35px;
+  /* display:flex;
+  justify-content: space-between;
+  flex-direction: column; */
+}
+a{
+  color:rgba(255, 255, 255, 0.438)
+}
+a:hover{
+  color:rgba(255, 255, 255, 0.712)
+}
+
+#image_strategie, #image_gestion, #image_approvisionnement, #image_consultation {
+  /* margin:15px; */
+  width:30%;
+  height:20%;
+  background-color: rgb(209, 94, 65);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position: center;
+  border-radius: 150px;
+}
+
+#image_strategie{
+  background-image: url("./../images/iconizer-chess-solid\ \(1\).svg");
+}
+
+#image_gestion{
+  background-image: url("./../images/iconizer-bars-progress-solid.svg");
+}
+
+#image_approvisionnement{
+  background-image: url("./../images/iconizer-truck-field-solid.svg");
+}
+
+#image_consultation{
+  background-image: url("./../images/iconizer-square-poll-horizontal-solid.svg");
+}
+
+div>div>p{
+  font-size: 18px;
+}
+
+div>div>h1{
+  font-size: 30px;
+}
+
+footer{
+  background-color: black;
+  width:102%;
+  height:7%;
+  margin-left: -0.5%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+footer>p{
+  background-color: black;
+  color : rgba(255, 255, 255, 0.438);
+  text-align:center;
+  font-size: smaller;
+}
+@media screen and (max-width: 1395px) {
+  #conseil_gestion > h1 {
+    font-size: 42px; /* Réglez la taille de police souhaitée pour les écrans inférieurs à 1395px */
+  }
+}
+@media screen and (max-width: 1305px) {
+  #conseil_gestion > h1 {
+    font-size: 40px; /* Réglez la taille de police souhaitée pour les écrans inférieurs à 1395px */
+  }
+}
+@media screen and (max-width: 1241px) {
+  #conseil_gestion > h1 {
+    font-size: 30px; /* Réglez la taille de police souhaitée pour les écrans inférieurs à 1395px */
+  }
+}
