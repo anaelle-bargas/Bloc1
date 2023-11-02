@@ -168,7 +168,11 @@ header>div>p:hover{
     margin-bottom: 20px;
 }
 
-
+#read_more:hover{
+    border:solid;
+    border-color:#5EA9CC;
+    padding:7.4px;
+}
 
 #tags{
     /* display:flex;
