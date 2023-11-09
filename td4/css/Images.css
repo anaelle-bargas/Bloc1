@@ -18,17 +18,33 @@ body{
 #images{
     height:90%;
     width:1070px;
-    background-color: white;
     box-shadow: 0px 0px 10px rgb(90, 88, 88);
 
 }
 
 
 #photo{
-    height:712px;
-    box-shadow: 0px 0px 10px rgb(90, 88, 88);
+    height:80.4%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
 }
 
+
+#photo>div{
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#photo>div>img{
+    /* position:absolute; */
+    height:100%;
+    width:auto;
+}
 
 #carrousel{
     height:125px;
@@ -36,19 +52,14 @@ body{
     box-shadow: 0px 0px 10px rgb(90, 88, 88);
     display:flex;
     justify-content: space-between;
-}
+    width:100%;
+}    
 
-
-#photo>div>img{
-    height:712px;
-    width:auto;
-}
 
 
 #carrouseul>div{
     height:125%;
     width:50%;
-    background-color: aqua;
 }
 #carrousel>div>img{
     height:125px;
