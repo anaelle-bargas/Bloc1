@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <link rel="stylesheet" href="./../css/Delete-conf.css">
+    <script src="./../js/Delete-conf.js"></script>
+</head>
+<body>
+    <img src="./../images/dolomites-2897227.jpg" alt="" id = "image">
+    <button type="button" value = "Supprimer la photo" id = "bouton" onclick = "affichageFenetre()">Supprimer la photo</button>   
+    <div id = "demande"  style = "display: none;">
+
+        <p>Voulez-vous vraiment supprimer?</p>
+        <div id = "reponse">
+            <input type="button" id = "o" value="OUI" onclick="autorisationSuppr('o')">
+            <input type="button" id = "n" value="NON" onclick="autorisationSuppr('n')">
+
+        </div>
+    </div> 
+    <div id = "tout" style = "display: none;"></div>
+</body>
+</html>

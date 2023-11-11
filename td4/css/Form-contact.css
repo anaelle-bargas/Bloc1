@@ -1,0 +1,89 @@
+html{
+    overflow:hidden;
+    background-color: rgb(221, 189, 150);
+    height:100vh;
+    width:100%;
+}
+
+body{
+    height:100vh;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* font-size: 45px;; */
+}
+
+
+#formulaire{
+    height:70%;
+    width:50%;
+    box-shadow: 0px 0px 10px rgb(90, 88, 88);
+    background-color: rgb(255, 255, 255);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 35px;
+    min-width: 768px;
+    /* align-items: center; */
+}
+
+h1{
+    width:100%;
+    text-align: center;
+    height:1%;
+    padding-bottom: -120px;
+    border-radius: 35px;
+}
+
+
+
+
+#coordonnees{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:10%;
+    padding:35px;
+    font-size: 20px;
+    border-radius: 35px;
+}
+
+#message_div{
+    height: 30%;
+    padding: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+    border-radius: 35px;
+
+}
+
+input, textarea{
+    width:80%;
+    border-radius: 15px;
+}
+
+
+#message{
+    height:130px;
+    border-radius: 15px;
+    padding-top:15px;
+    padding-left: 0px;
+}
+
+
+button{
+    margin-top: 10px;
+    padding:15px;
+    font-size: 20px;
+    border:none;
+    border-radius: 35px;
+}
+
+button:hover{
+    background-color: rgb(255, 255, 255);
+    /* color:white; */
+}
