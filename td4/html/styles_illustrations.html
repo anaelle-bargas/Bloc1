@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <link rel="stylesheet" href="./../css/styles_illustrations.css">
+</head>
+<body>
+    <h1>Exemple d'interface pour changer les attributs de style du texte</h1>
+    <p>Cliquez sur les cases à cocher et utilisez les autres éléments ci-dessous pour changer les atttributs de style du texte affiché dans la zone.</p>
+    
+    <div>
+        <div>
+            <input onclick = "fontWeight()" type ="checkbox" name="Gras" id="bold">Gras
+            <input onclick = "fontStyle()" type ="checkbox" name="Italique" id="italic">Italique
+            <input onclick = "textDecoration('underline')" type ="checkbox" name="Souligné" id="underline">Souligné
+            <input onclick = "textDecoration('line-through')" type ="checkbox" name="Barré" id="line-through">Barré
+            <input onclick = "changeButton('color')" type ="couleur" name="Couleur" id="couleur" value = "#ff0000">
+            <input onclick = "changeButton('font-size')" type ="number" name="Size" id="size" value = "20">
+            <select id="police" name="police">
+                <option onclick = "changeButton('fontFamily')" value="Courrier">Courrier</option>
+                <option onclick = "changeButton('font-family')" value="Times New Roman">Times New Roman</option>
+                <option onclick = "changeButton('font-family')" value="Arial">Arial</option>
+                <option onclick = "changeButton('font-family')" value="Helvetica Neue">Helvetica Neue</option>
+            </select>
+            <input onclick = "changeButton( 'font-size', 'augmenter')" type="button" id = "augmenter" value="Augmenter la taille">
+            <input onclick = "changeButton('font-size', 'diminuer')" type="button" id = "diminuer" value="Diminuer la taille">
+        </div>
+        <p id = "texte">Texte exemple pour illustrer le changement des attributs de style.</p>
+
+    </div>
+    
+    <script src="./../js/styles_illustrations.js"></script>
+
+</body>
+</html>
