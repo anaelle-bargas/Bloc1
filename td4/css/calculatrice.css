@@ -1,0 +1,104 @@
+html{
+    overflow:hidden;
+    background-color: rgb(221, 189, 150);
+    height:100vh;
+    width:100%;
+}
+
+body{
+    
+    height:100vh;
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#haut, #bas{
+    width:99%;
+    /* box-shadow: 0px 0px 10px rgb(236, 236, 236); */
+    background-color: rgb(209, 209, 209);
+    
+}
+
+#haut{
+    height:28.5%;
+    display:block;
+    flex-direction: column;
+    /* justify-content: center; */
+
+}
+
+#haut>p{
+    margin-right:30px;
+    /* background-color: aliceblue; */
+    width:auto;
+    height:auto;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.resultat{
+    margin-top:0px;
+    font-weight: bold;
+    font-size: 110px;
+}
+
+.calcul{
+    margin-top: 10px;
+    color:rgb(122, 119, 119);
+}
+
+
+#bas{
+    height:68.5%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#ligne{
+    width:97%;
+    height:24.5%;
+    /* background-color: aliceblue; */
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+div>div>div{
+    height:90%;
+    width:24%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(88, 88, 90);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+
+
+div>div>div:hover{
+    box-shadow: 0px 0px 10px rgb(88, 88, 90);
+
+}
+.operations{
+    background-color: rgb(184, 184, 184);
+}
+
+.egal{
+    background-color: rgb(28, 28, 141);
+}
+
+img{
+    height:70%;
+    width:auto;
+}
