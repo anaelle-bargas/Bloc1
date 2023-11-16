@@ -19,16 +19,16 @@ body{
 
 #haut, #bas{
     width:99%;
-    /* box-shadow: 0px 0px 10px rgb(236, 236, 236); */
-    background-color: rgb(209, 209, 209);
+    background-color: rgb(243, 243, 243);
     
 }
 
 #haut{
     height:28.5%;
-    display:block;
+    display:flex;
     flex-direction: column;
-    /* justify-content: center; */
+    /* align-items: center; */
+    justify-content: center;
 
 }
 
@@ -39,16 +39,21 @@ body{
     height:auto;
     display:flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .resultat{
+    height:auto;
     margin-top:0px;
+    margin-bottom: 0px;
     font-weight: bold;
-    font-size: 110px;
+    font-size: 100px;
+    display:none;
 }
 
 .calcul{
     margin-top: 10px;
+    margin-bottom: 0px;
     color:rgb(122, 119, 119);
 }
 
@@ -91,14 +96,14 @@ div>div>div:hover{
 
 }
 .operations{
-    background-color: rgb(184, 184, 184);
+    background-color: rgb(243, 243, 243);
 }
 
 .egal{
-    background-color: rgb(28, 28, 141);
+    background-color: rgb(0, 90, 158);
 }
 
 img{
-    height:70%;
+    height:30%;
     width:auto;
 }

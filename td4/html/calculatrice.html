@@ -8,33 +8,33 @@
 </head>
 <body>
     <div id = "haut">
-        <p class = "calcul">12 + 9 =</p>
-        <p class = "resultat">129</p>
+        <p class = "calcul"></p>
+        <p class = "resultat" style = "display:none;"></p>
     </div>
     <div id = "bas">
         <div id = "ligne">
-            <div onclick = "calcul()">7</div>
-            <div>8</div>
-            <div>9</div>
-            <div class = "operations">x</div>
+            <div onclick = "calcul('7')">7</div>
+            <div onclick = "calcul('8')">8</div>
+            <div onclick = "calcul('9')">9</div>
+            <div onclick = "calcul(' * ')" class = "operations">x</div>
         </div>
         <div id = "ligne">
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div class = "operations">-</div>
+            <div onclick = "calcul('4')">4</div>
+            <div onclick = "calcul('5')">5</div>
+            <div onclick = "calcul('6')">6</div>
+            <div onclick = "calcul(' - ')" class = "operations">-</div>
         </div>
         <div id = "ligne">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div class = "operations">+</div>
+            <div onclick = "calcul('1')">1</div>
+            <div onclick = "calcul('2')">2</div>
+            <div onclick = "calcul('3')">3</div>
+            <div onclick = "calcul(' + ')" class = "operations">+</div>
         </div>
         <div id = "ligne">
-            <div><img src="./../images/calculatrice-mathematique.png" alt=""></div>
-            <div>0</div>
-            <div>,</div>
-            <div class = "egal">=</div>
+            <div onclick = "plus_ou_moins('+-')"><img src="./../images/2023-11-16_13h09_21.png" alt=""></div>
+            <div onclick = "calcul('0')">0</div>
+            <div onclick = "calcul('.')">.</div>
+            <div onclick = "calcul_egal(' x ')" class = "egal">=</div>
         </div>
     </div>
         
