@@ -7,20 +7,35 @@
     <title>Font-tester</title>
 </head>
 <body>
+        <?php
+        $message = $_POST["message"]??"Message par défaut";
+        $color = $_POST["color"]??"black";
 
-    <input type="number" name="size" id="" placeholder = "Entrer une taille en px">
-    <input type="color" name="color" id="color" placeholder = "Entrer une couleur">
-    <textarea name="message" placeholder = "Message" id="" cols="30" rows="10" style = "color:<?=$color?>; font-size:<?=$size?>px;"></textarea>
+        $size = $_POST["size"]??12;
+        if(isset($_POST["add_or_sub"])){
+            
+            if ($_POST["add_or_sub"]=="1"){
+                $size+=1;
+            }
+            else if($_POST["add_or_sub"]=="-1"){
+                $size-=1;
 
-<?php
+            }
+        }
+      
+        
+        ?>
 
-$message = $_GET["message"]??"Il n'y a pas de paramètres";
-$color = $_GET["color"]??"black";
-
-$size = $_GET["size"]??12;
-?>
+        <form action="<?=$_SERVER["PHP_SELF"]?>" method="POST">
+            <input type="number" name="size" value  = "<?=$size?>">
+            <input type="color" id = "color" name="color"  value = "<?=$color?>">
+            <input type="submit" value="Entrer">
+            <button type="submit" name = "add_or_sub" value = "1">+</button>
+            <button type="submit" name = "add_or_sub" value = "-1">-</button>
+            <textarea name = "message" placeholder = "Message" cols="" rows="" style = "color:<?=$color?>; font-size:<?=$size?>px;"><?=$message?></textarea>
+        </form>
+        
     
-    <!-- <p style = "color:<?=$color?>; font-size:<?=$size?>px;"><?=$message?></p> -->
 <style>
     body{
         display:flex;
@@ -43,19 +58,25 @@ $size = $_GET["size"]??12;
         display:flex;
         justify-content:center;
         align-items:center;
-        flex-direction:column;
+        flex-direction:row;
         padding:35px;
 
     }
-    input, textarea{
+    input, button{
         padding:15px;
         margin:15px;
         border-radius:15px;
 
     }
+    textarea{
+        padding:5px;
+        border-radius:15px;
+
+    }
     #color{
-        width:22%;
-        height:2%;
+        border-radius:5px;
+        padding:0px;
+        margin:0px;;
     }
 </style>
 </body>
